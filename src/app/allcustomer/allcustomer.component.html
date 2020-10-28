@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table" >
+      <thead class="thead-light" style="margin-top: 500px;">
+        <tr>
+        <th>CustomerId</th>
+        <th>Name</th>
+        <th>AllCustomer</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.customerId}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.allcustomer}}</td>
+          <td><button type="button" class="btn btn-large btn-warning" (click)=deleteCustomer(customer.customerId)>Delete</button></td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
